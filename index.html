@@ -1,161 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript"  src="script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script type="text/javascript" src="script.js"></script>
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- Parent container -->
     <div class="container">
-        <div class="heading">
-            
-            <hr>
-            <p>Bundle & Save</p>    
-            <hr>
-       
-        </div>
-        <div id="block-1" class="block_one">
+      <!-- Heading -->
+      <div class="heading">
+        <hr />
+        <p>Bundle & Save</p>
+        <hr />
+      </div>
 
-<span class="inner_container_block_one">
-    <span class="left_content">
-    <svg id="ellipse_one" class="ellipse" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <circle cx="7.92151" cy="8.20799" r="6.77852" stroke="#DADADA" stroke-width="0.903803"/>
-        <svg class="display" x="3" y="3" class="inner_circle" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-            <circle cx="4.92136" cy="5.29978" r="4.51902" fill="#007F61"/>
+      <!-- First block (unselected) -->
+      <div id="block-1" class="block">
+        <span class="inner_container_block_one">
+          <span class="left_content">
+            <!-- unselected ring -->
+            <svg
+              id="ellipse_one"
+              class="ellipse"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <circle
+                cx="7.92151"
+                cy="8.20799"
+                r="6.77852"
+                stroke="#DADADA"
+                stroke-width="0.903803"
+              />
+              <svg
+                class="display"
+                x="3"
+                y="3"
+                class="inner_circle"
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="10"
+                viewBox="0 0 10 10"
+                fill="none"
+              >
+                <circle cx="4.92136" cy="5.29978" r="4.51902" fill="#007F61" />
+              </svg>
             </svg>
-        </svg>
-        
-        <span class="details">
-            <div class="quantity">
-                1 Pair
-            </div>
-            <div class="price">DKK 195.00</div>
+
+            <span class="details">
+              <div class="quantity">1 Pair</div>
+              <div class="price">DKK 195.00</div>
+            </span>
+          </span>
+          <span class="offer">50% OFF</span>
         </span>
-    </span>
-        <span class="offer">50% OFF</span>
-</span>
+      </div>
 
-        </div>
-        <div id="block-2" class="block_one block_two active">
-            <span class="inner_container_block_one">
-                <span class="left_content">
-                    <svg id="ellipse_two"  xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
-                        
-                        <circle cx="7.92151" cy="8.20799" r="6.77852" stroke="#007F61" stroke-width="0.903803"/>
-                        <svg x="3" y="3" class="inner_circle" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                            <circle cx="4.92136" cy="5.29978" r="4.51902" fill="#007F61"/>
-                            </svg>
-                        </svg>
-                    
-                    <span class="details">
-                        <div class="quantity">
-                            1 Pair
-                        </div>
-                        <div class="price">DKK 195.00</div>
-                    </span>
-                </span>
-                <span class="offer_details">
-                <div class="popular">Most Popular</div>
-              
-                   
-                <div class="cancelled_container">  <span class="cancelled"> <hr class="cut">DKK 195.00</span><span class="offer">40% OFF</span></div>
-                    
-                </span>
+      <!-- Second Block (Selected by default) -->
+      <div id="block-2" class="block block_two active">
+        <span class="inner_container_block_one">
+          <span class="left_content">
+            <!-- selected ring -->
+            <svg
+              id="ellipse_two"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="15"
+              viewBox="0 0 16 15"
+              fill="none"
+            >
+              <circle
+                cx="7.92151"
+                cy="8.20799"
+                r="6.77852"
+                stroke="#007F61"
+                stroke-width="0.903803"
+              />
+              <svg
+                x="3"
+                y="3"
+                class="inner_circle"
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="10"
+                viewBox="0 0 10 10"
+                fill="none"
+              >
+                <circle cx="4.92136" cy="5.29978" r="4.51902" fill="#007F61" />
+              </svg>
+            </svg>
+
+            <span class="details">
+              <div class="quantity">1 Pair</div>
+              <div class="price">DKK 195.00</div>
             </span>
-            <div class="table_container">
-                <table>
-                    <thead>
-                      <tr>
-                        <th></th>
-                        <th>Size</th>
-                        <th>Color</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="serial">#1 &nbsp;</td>
-                        <td>  <select name="size" id="size">
-                            <option value="volvo">S</option>
-                            <option value="saab">Colour</option>
-                            <option value="opel">Opel</option>
-                            <option value="audi">Audi</option>
-                          </select></td>
-                        <td>  <select name="colour" id="colour">
-                            <option value="volvo">Colour</option>
-                            <option value="saab">Saab</option>
-                            <option value="opel">Opel</option>
-                            <option value="audi">Audi</option>
-                          </select></td>
-                      </tr>
-                      <tr>
-                        <td class="serial">#2 </td>
-                        <td>  <select name="size" id="size2">
-                            <option value="volvo">S</option>
-                            <option value="saab">Colour</option>
-                            <option value="opel">Opel</option>
-                            <option value="audi">Audi</option>
-                          </select></td>
-                        <td>  <select name="colour" id="colour2">
-                            <option value="volvo">Colour</option>
-                            <option value="saab">Saab</option>
-                            <option value="opel">Opel</option>
-                            <option value="audi">Audi</option>
-                          </select></td>
-                      </tr>
-                     
-                    </tbody>
-                
-                  </table>
+          </span>
+          <span class="offer_details">
+            <div class="popular">Most Popular</div>
+
+            <div class="cancelled_container">
+              <span class="cancelled">
+                <hr class="cut" />
+                DKK 195.00</span
+              ><span class="offer">40% OFF</span>
             </div>
-        </div>
-        <div id="block-3" class="block_one">
-
-            <span class="inner_container_block_one">
-                <span class="left_content">
-                <svg id="ellipse_three" class="ellipse" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <circle cx="7.92151" cy="8.20799" r="6.77852" stroke="#DADADA" stroke-width="0.903803"/>
-                    <svg class="display" x="3" y="3" class="inner_circle" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                        <circle cx="4.92136" cy="5.29978" r="4.51902" fill="#007F61"/>
-                        </svg>
-                    </svg>
-                    
-                    <span class="details">
-                        <div class="quantity">
-                            3 Pair
-                        </div>
-                        <div class="price">DKK 528.00</div>
-                    </span>
-                </span>
-                    <span class="offer">60% OFF</span>
-            </span>
-            
-                    </div>
-        <div class="summary">
-
-            <span class="shipping_time">
-                Free 2 day shipping
-            </span>
-            <span>
-            <span>
-                <span class="total_static">Total : </span>
-            </span>
-            <span class="total_dynamic">  DKK 360.00</span>
+          </span>
         </span>
+
+        <!-- selection of colours and sizes -->
+        <div class="table_container">
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>Size</th>
+                <th>Color</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="serial">#1 &nbsp;</td>
+                <td>
+                  <select name="size" id="size">
+                    <option value="volvo">S</option>
+                    <option value="saab">Colour</option>
+                    <option value="opel">abcd</option>
+                    <option value="audi">abcd</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="colour" id="colour">
+                    <option value="volvo">Colour</option>
+                    <option value="saab">abcd</option>
+                    <option value="opel">abcd</option>
+                    <option value="audi">abcd</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td class="serial">#2 &nbsp;</td>
+                <td>
+                  <select name="size" id="size2">
+                    <option value="volvo">S</option>
+                    <option value="saab">Colour</option>
+                    <option value="opel">abcd</option>
+                    <option value="audi">abcd</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="colour" id="colour2">
+                    <option value="volvo">Colour</option>
+                    <option value="saab">abcd</option>
+                    <option value="opel">abcd</option>
+                    <option value="audi">abcd</option>
+                  </select>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <button class="add_button"><span><i class="fa fa-plus plus_icon"></i></span><span>Add to Cart</span></button>
-        <div class="trademark_container">
+      </div>
+
+      <!-- Third block (unselected) -->
+      <div id="block-3" class="block">
+        <span class="inner_container_block_one">
+          <span class="left_content">
+            <!-- unselected ring -->
+            <svg
+              id="ellipse_three"
+              class="ellipse"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <circle
+                cx="7.92151"
+                cy="8.20799"
+                r="6.77852"
+                stroke="#DADADA"
+                stroke-width="0.903803"
+              />
+              <svg
+                class="display"
+                x="3"
+                y="3"
+                class="inner_circle"
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="10"
+                viewBox="0 0 10 10"
+                fill="none"
+              >
+                <circle cx="4.92136" cy="5.29978" r="4.51902" fill="#007F61" />
+              </svg>
+            </svg>
+
+            <span class="details">
+              <div class="quantity">3 Pair</div>
+              <div class="price">DKK 528.00</div>
+            </span>
+          </span>
+          <span class="offer">60% OFF</span>
+        </span>
+      </div>
+
+      <!-- Order summary and shipping details -->
+      <div class="summary">
+        <span class="shipping_time"> Free 2 day shipping </span>
+        <span>
+          <span>
+            <span class="total_static">Total : </span>
+          </span>
+          <span class="total_dynamic"> DKK 360.00</span>
+        </span>
+      </div>
+
+      <!-- Add to cart button -->
+      <button class="add_button">
+        <span><i class="fa fa-plus plus_icon"></i></span
+        ><span>Add to Cart</span>
+      </button>
+
+      <!-- Trademark -->
+      <div class="trademark_container">
         <div class="trademark">
-            <svg  class="trademark_circle" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
-                <circle  cx="4" cy="4" r="3.83333" stroke="black" stroke-width="0.333333"/>
-                <span class="trademark_text">c</span>
-                </svg>
-                
+          <svg
+            class="trademark_circle"
+            xmlns="http://www.w3.org/2000/svg"
+            width="8"
+            height="8"
+            viewBox="0 0 8 8"
+            fill="none"
+          >
+            <circle
+              cx="4"
+              cy="4"
+              r="3.83333"
+              stroke="black"
+              stroke-width="0.333333"
+            />
+            <span class="trademark_text">c</span>
+          </svg>
         </div>
         <span class="powered_by">Powered by Pumper</span>
+      </div>
     </div>
-    </div>
-</body>
+  </body>
 </html>
