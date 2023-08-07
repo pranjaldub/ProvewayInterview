@@ -45,7 +45,7 @@ function activateTileOne(event) {
   //adding display class which deactivates the tile
   element.childNodes["3"].classList.add("display");
   //changing stroke of outer ring
-  element.childNodes["3"].style.stroke = "#DADADA";
+  element.childNodes["1"].style.stroke = "#DADADA";
 
   //selecting the ring of third block
   var element = document.getElementById("ellipse_three");
@@ -60,10 +60,9 @@ function activateTileOne(event) {
   //adding display class which deactivates the tile
   element.childNodes["3"].classList.add("display");
   //changing stroke of outer ring
-  element.childNodes["3"].style.stroke = "#DADADA";
-
+  element.childNodes["1"].style.stroke = "#DADADA";
+  //changing the total amount
   var element = document.getElementsByClassName("total_dynamic");
-
   element["0"].innerHTML = ` DKK ${Math.round(195).toFixed(2)}`;
 }
 
@@ -99,7 +98,7 @@ function activateTileThree(event) {
   //adding display class which deactivates the tile
   element.childNodes["3"].classList.add("display");
   //changing stroke of outer ring
-  element.childNodes["3"].style.stroke = "#DADADA";
+  element.childNodes["1"].style.stroke = "#DADADA";
 
   //selecting the ring of first block
   var element = document.getElementById("ellipse_one");
@@ -114,10 +113,9 @@ function activateTileThree(event) {
   //adding display class which deactivates the tile
   element.childNodes["3"].classList.add("display");
   //changing stroke of outer ring
-  element.childNodes["3"].style.stroke = "#DADADA";
-
+  element.childNodes["1"].style.stroke = "#DADADA";
+  //changing the total amount
   var element = document.getElementsByClassName("total_dynamic");
-  console.log(element);
   element["0"].innerHTML = ` DKK ${Math.round(528).toFixed(2)}`;
 }
 
@@ -153,7 +151,7 @@ function activateTileTwo(event) {
   //adding display class which deactivates the tile
   element.childNodes["3"].classList.add("display");
   //changing stroke of outer ring
-  element.childNodes["3"].style.stroke = "#DADADA";
+  element.childNodes["1"].style.stroke = "#DADADA";
 
   //selecting the ring of third block
   var element = document.getElementById("ellipse_three");
@@ -168,9 +166,8 @@ function activateTileTwo(event) {
   //adding display class which deactivates the tile
   element.childNodes["3"].classList.add("display");
   //changing stroke of outer ring
-  element.childNodes["3"].style.stroke = "#DADADA";
-
+  element.childNodes["1"].style.stroke = "#DADADA";
+  //changing the total amount
   var element = document.getElementsByClassName("total_dynamic");
-  console.log(element);
   element["0"].innerHTML = ` DKK ${Math.round(360).toFixed(2)}`;
 }
