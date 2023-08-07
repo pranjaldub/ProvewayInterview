@@ -29,9 +29,14 @@ body {
 }
 
 /* General style of unselected block */
+.block_additinal{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .block {
-  display: flex;
 
+   
   width: 21.29588rem;
   height: 4.632rem;
   border-radius: 0.22594rem;
@@ -49,12 +54,12 @@ Style of unselected circle */
   cursor: pointer;
 }
 .inner_container_block_one {
-  width: 100%;
+  width: 88%;
   margin: 1.24rem 1.36rem 1.27rem 1.36rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 .left_content {
   display: flex;

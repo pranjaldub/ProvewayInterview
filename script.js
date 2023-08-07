@@ -20,6 +20,10 @@ function activateTileOne(event) {
   var element = document.getElementById("ellipse_one");
   //adding class active to first block
   element.parentElement.parentNode.parentElement.classList.add("active");
+  element.parentElement.parentNode.parentElement.children["1"].classList.remove(
+    "display"
+  );
+  element.parentElement.parentNode.parentElement.style.height = "8.11131rem";
   //making the inner filled circle visible
   element.children["1"]?.classList.remove("display");
   //changing the stroke of the ring
@@ -29,6 +33,12 @@ function activateTileOne(event) {
   var element = document.getElementById("ellipse_two");
   //removing the class active thus deactivating this block
   element.parentElement.parentNode.parentElement.classList.remove("active");
+  element.parentElement.parentNode.parentElement.style.height = "4.632rem";
+
+  element.parentElement.parentNode.parentElement.children["1"].classList.add(
+    "display"
+  );
+
   //adding display class which deactivates the tile
   element.childNodes["3"].classList.add("display");
   //changing stroke of outer ring
@@ -38,13 +48,19 @@ function activateTileOne(event) {
   var element = document.getElementById("ellipse_three");
   //removing the class active thus deactivating this block
   element.parentElement.parentNode.parentElement.classList.remove("active");
+
+  element.parentElement.parentNode.parentElement.style.height = "4.632rem";
+
+  element.parentElement.parentNode.parentElement.children["1"].classList.add(
+    "display"
+  );
   //adding display class which deactivates the tile
   element.childNodes["3"].classList.add("display");
   //changing stroke of outer ring
   element.childNodes["3"].style.stroke = "#DADADA";
 
   var element = document.getElementsByClassName("total_dynamic");
-  console.log(element);
+
   element["0"].innerHTML = ` DKK ${Math.round(195).toFixed(2)}`;
 }
 
@@ -56,6 +72,10 @@ function activateTileThree(event) {
   var element = document.getElementById("ellipse_three");
   //adding class active to third block
   element.parentElement.parentNode.parentElement.classList.add("active");
+  element.parentElement.parentNode.parentElement.children["1"].classList.remove(
+    "display"
+  );
+  element.parentElement.parentNode.parentElement.style.height = "11.86rem";
   //activating the third block adding inner circle inside ring
   element.children["1"]?.classList.remove("display");
   //changing the stroke of ring
@@ -65,6 +85,12 @@ function activateTileThree(event) {
   var element = document.getElementById("ellipse_two");
   //removing the class active thus deactivating this block
   element.parentElement.parentNode.parentElement.classList.remove("active");
+
+  element.parentElement.parentNode.parentElement.style.height = "4.632rem";
+
+  element.parentElement.parentNode.parentElement.children["1"].classList.add(
+    "display"
+  );
   //adding display class which deactivates the tile
   element.childNodes["3"].classList.add("display");
   //changing stroke of outer ring
@@ -74,6 +100,12 @@ function activateTileThree(event) {
   var element = document.getElementById("ellipse_one");
   //removing the class active thus deactivating this block
   element.parentElement.parentNode.parentElement.classList.remove("active");
+
+  element.parentElement.parentNode.parentElement.style.height = "4.632rem";
+
+  element.parentElement.parentNode.parentElement.children["1"].classList.add(
+    "display"
+  );
   //adding display class which deactivates the tile
   element.childNodes["3"].classList.add("display");
   //changing stroke of outer ring
@@ -92,6 +124,10 @@ function activateTileTwo(event) {
   var element = document.getElementById("ellipse_two");
   //adding class active to second block
   element.parentElement.parentNode.parentElement.classList.add("active");
+  element.parentElement.parentNode.parentElement.children["1"].classList.remove(
+    "display"
+  );
+  element.parentElement.parentNode.parentElement.style.height = "10.11131rem";
   //activating the second block adding inner circle inside ring
   element.children["1"]?.classList.remove("display");
   //changing the stroke of ring
@@ -101,6 +137,12 @@ function activateTileTwo(event) {
   var element = document.getElementById("ellipse_one");
   //removing the class active thus deactivating this block
   element.parentElement.parentNode.parentElement.classList.remove("active");
+
+  element.parentElement.parentNode.parentElement.style.height = "4.632rem";
+
+  element.parentElement.parentNode.parentElement.children["1"].classList.add(
+    "display"
+  );
   //adding display class which deactivates the tile
   element.childNodes["3"].classList.add("display");
   //changing stroke of outer ring
@@ -110,6 +152,12 @@ function activateTileTwo(event) {
   var element = document.getElementById("ellipse_three");
   //removing the class active thus deactivating this block
   element.parentElement.parentNode.parentElement.classList.remove("active");
+
+  element.parentElement.parentNode.parentElement.style.height = "4.632rem";
+
+  element.parentElement.parentNode.parentElement.children["1"].classList.add(
+    "display"
+  );
   //adding display class which deactivates the tile
   element.childNodes["3"].classList.add("display");
   //changing stroke of outer ring
