@@ -42,6 +42,10 @@ function activateTileOne(event) {
   element.childNodes["3"].classList.add("display");
   //changing stroke of outer ring
   element.childNodes["3"].style.stroke = "#DADADA";
+
+  var element = document.getElementsByClassName("total_dynamic");
+  console.log(element);
+  element["0"].innerHTML = ` DKK ${Math.round(195).toFixed(2)}`;
 }
 
 //When the third block is clicked, the function activateTileThree is called.
@@ -74,6 +78,10 @@ function activateTileThree(event) {
   element.childNodes["3"].classList.add("display");
   //changing stroke of outer ring
   element.childNodes["3"].style.stroke = "#DADADA";
+
+  var element = document.getElementsByClassName("total_dynamic");
+  console.log(element);
+  element["0"].innerHTML = ` DKK ${Math.round(528).toFixed(2)}`;
 }
 
 //When the second block is clicked, the function activateTileTwo is called.
@@ -106,4 +114,8 @@ function activateTileTwo(event) {
   element.childNodes["3"].classList.add("display");
   //changing stroke of outer ring
   element.childNodes["3"].style.stroke = "#DADADA";
+
+  var element = document.getElementsByClassName("total_dynamic");
+  console.log(element);
+  element["0"].innerHTML = ` DKK ${Math.round(360).toFixed(2)}`;
 }
