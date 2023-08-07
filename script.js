@@ -20,9 +20,11 @@ function activateTileOne(event) {
   var element = document.getElementById("ellipse_one");
   //adding class active to first block
   element.parentElement.parentNode.parentElement.classList.add("active");
+  // displaying the color and size selection table
   element.parentElement.parentNode.parentElement.children["1"].classList.remove(
     "display"
   );
+  //increasing block size on selection
   element.parentElement.parentNode.parentElement.style.height = "8.11131rem";
   //making the inner filled circle visible
   element.children["1"]?.classList.remove("display");
@@ -33,8 +35,9 @@ function activateTileOne(event) {
   var element = document.getElementById("ellipse_two");
   //removing the class active thus deactivating this block
   element.parentElement.parentNode.parentElement.classList.remove("active");
+  //decresing the height on deactivation
   element.parentElement.parentNode.parentElement.style.height = "4.632rem";
-
+  //hiding the color and size selection table
   element.parentElement.parentNode.parentElement.children["1"].classList.add(
     "display"
   );
@@ -48,9 +51,9 @@ function activateTileOne(event) {
   var element = document.getElementById("ellipse_three");
   //removing the class active thus deactivating this block
   element.parentElement.parentNode.parentElement.classList.remove("active");
-
+  //decresing the height on deactivation
   element.parentElement.parentNode.parentElement.style.height = "4.632rem";
-
+  //hiding the color and size selection table
   element.parentElement.parentNode.parentElement.children["1"].classList.add(
     "display"
   );
@@ -72,9 +75,11 @@ function activateTileThree(event) {
   var element = document.getElementById("ellipse_three");
   //adding class active to third block
   element.parentElement.parentNode.parentElement.classList.add("active");
+  // displaying the color and size selection table
   element.parentElement.parentNode.parentElement.children["1"].classList.remove(
     "display"
   );
+  //increasing block size on selection
   element.parentElement.parentNode.parentElement.style.height = "11.86rem";
   //activating the third block adding inner circle inside ring
   element.children["1"]?.classList.remove("display");
@@ -85,9 +90,9 @@ function activateTileThree(event) {
   var element = document.getElementById("ellipse_two");
   //removing the class active thus deactivating this block
   element.parentElement.parentNode.parentElement.classList.remove("active");
-
+  //decresing the height on deactivation
   element.parentElement.parentNode.parentElement.style.height = "4.632rem";
-
+  //hiding the color and size selection table
   element.parentElement.parentNode.parentElement.children["1"].classList.add(
     "display"
   );
@@ -100,9 +105,9 @@ function activateTileThree(event) {
   var element = document.getElementById("ellipse_one");
   //removing the class active thus deactivating this block
   element.parentElement.parentNode.parentElement.classList.remove("active");
-
+  //decresing the height on deactivation
   element.parentElement.parentNode.parentElement.style.height = "4.632rem";
-
+  //hiding the color and size selection table
   element.parentElement.parentNode.parentElement.children["1"].classList.add(
     "display"
   );
@@ -124,9 +129,11 @@ function activateTileTwo(event) {
   var element = document.getElementById("ellipse_two");
   //adding class active to second block
   element.parentElement.parentNode.parentElement.classList.add("active");
+  // displaying the color and size selection table
   element.parentElement.parentNode.parentElement.children["1"].classList.remove(
     "display"
   );
+  //increasing block size on selection
   element.parentElement.parentNode.parentElement.style.height = "10.11131rem";
   //activating the second block adding inner circle inside ring
   element.children["1"]?.classList.remove("display");
@@ -137,9 +144,9 @@ function activateTileTwo(event) {
   var element = document.getElementById("ellipse_one");
   //removing the class active thus deactivating this block
   element.parentElement.parentNode.parentElement.classList.remove("active");
-
+  //decresing the height on deactivation
   element.parentElement.parentNode.parentElement.style.height = "4.632rem";
-
+  //hiding the color and size selection table
   element.parentElement.parentNode.parentElement.children["1"].classList.add(
     "display"
   );
@@ -152,9 +159,9 @@ function activateTileTwo(event) {
   var element = document.getElementById("ellipse_three");
   //removing the class active thus deactivating this block
   element.parentElement.parentNode.parentElement.classList.remove("active");
-
+  //decresing the height on deactivation
   element.parentElement.parentNode.parentElement.style.height = "4.632rem";
-
+  //hiding the color and size selection table
   element.parentElement.parentNode.parentElement.children["1"].classList.add(
     "display"
   );
